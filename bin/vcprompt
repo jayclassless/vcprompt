@@ -42,7 +42,7 @@ Format tokens:
   %p                         The relative path to the repository from cwd
 """
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 from subprocess import Popen, PIPE
 from xml.dom.minidom import parseString
@@ -547,7 +547,7 @@ def hg(options):
 
     # modified
     if '%m' in options.format:
-        output, returncode = popen('hg status --modified')
+        output, returncode = popen('hg status --modified --added --deleted --removed')
 
         if returncode == 0:
             if output:
