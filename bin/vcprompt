@@ -35,6 +35,7 @@ Format tokens:
   %h                         The hash (or revision number)
   %r                         The revision number (or hash)
   %b                         The currently checked out branch
+  %t                         The number of stashes in the repo
   %a                         Prints an asterisk if the repo has staged changes
   %m                         Prints plus symbol if the repo is modified
   %u                         Prints question mark if repo has new files
@@ -42,7 +43,7 @@ Format tokens:
   %p                         The relative path to the repository from cwd
 """
 
-__version__ = '1.0.2'
+__version__ = '1.1.0'
 
 from subprocess import Popen, PIPE
 from xml.dom.minidom import parseString

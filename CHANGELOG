@@ -1,10 +1,11 @@
-1.0.2 (????-??-??)
+1.1.0 (????-??-??)
 ------------------
 
 * Added: -t/--timeout option for limiting max execution time
 * Fixed: '%m', '%u' tokens in Bazaar
 * Fixed: '%u' token always being shown in Python 3.
 * Fixed '%r' and '%h' tokens in Mercurual 1.5
+* Fixed: Dection of modifications in Mercurial
 * Added: '%t' format token for git stashes
 * Changed: Better handling of '%a' and '%m' token in Subversion
 * Changed: Test repos are now created on the fly before tests are run
